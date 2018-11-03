@@ -5,6 +5,8 @@ endif()
 if(POLICY CMP0054)
   cmake_policy(SET CMP0054 NEW)
 endif()
+# ---[ Includes
+set(${CMAKE_CXX_FLAGS} "-D_FORCE_INLINES ${CMAKE_CXX_FLAGS}")
 
 # ---[ Caffe project
 project(Caffe C CXX)
